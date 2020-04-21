@@ -18,21 +18,27 @@ function writePassword() {
     var upperCaseConfirm = confirm('Would you like Uppercase Characters included?');
     var specialConfirm = confirm('Would you like Special Characters included?');
     var numberConfirm = confirm('Would you like Numerical Characters included?');
-    // var passwordLength = prompt('Please pick a Password Length between 8 and 128.');
+    var passwordLength = prompt('Please pick a Password Length between 8 and 128.');
 
     confirmResults.push(lowerCaseConfirm);
     confirmResults.push(upperCaseConfirm);
     confirmResults.push(specialConfirm);
     confirmResults.push(numberConfirm);
 
-    // if(){
+    function notAllFalse(entry) {
+      return entry === true;
+    }
 
-    // }
-    // if (Number(passwordLength) >= 8 && Number(passwordLength) <= 128){
-    //   alert('Your password length meets the critera!');
-    // } else {
-    //   alert('Your length does not meet the criteria! Try again!');
-    // };
+    if(confirmResults.every(notAllFalse) !== false){
+      if (Number(passwordLength) >= 8 && Number(passwordLength) <= 128){
+        alert('Your password length meets the critera!');
+      } else {
+        alert('Your length does not meet the criteria! Try again!');
+      };
+    } else {
+      alert('You must select at least one criteria! Try again!');
+    };
+
 
     // console.log(lowerCaseConfirm);
     // console.log(upperCaseConfirm);
