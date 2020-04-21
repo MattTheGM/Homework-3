@@ -5,18 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Password Generator</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
     <link rel="stylesheet" href="style.css" />
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> -->
   </head>
   <body>
-    <div class="wrapper">
+    <div class="wrapper container-fluid">
       <header>
         <h1>Password Generator</h1>
       </header>
-      <div class="card">
-        <div class="card-header">
+      <div class="card container-fluid">
+        <div class="card-header container-fluid">
           <h2>Generate a Password</h2>
         </div>
-        <div class="card-body">
+        <div class="card-body container-fluid">
           <textarea
             readonly
             id="password"
@@ -24,7 +26,7 @@
             aria-label="Generated Password"
           ></textarea>
         </div>
-        <div class="card-footer">
+        <div class="card-footer container-fluid">
           <button id="generate" class="btn">Generate Password</button>
         </div>
       </div>
