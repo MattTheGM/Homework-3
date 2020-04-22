@@ -16,5 +16,7 @@ Provided at least one criteria is true and the password is between 8 and 128 cha
 
 Finally, the script evaluates which values are true for criteria, and then appends an empty result string with a random selection of characters from the given criteria. Once that is done, the unkempt string is then sliced down to size, and returned all the way up, so that it may be displayed into the div.
 
+```
+
 - - -
 
