@@ -43,7 +43,7 @@ GIVEN I need a new, secure password
     What Codes Can I Pull From:
         * One that has both jQuery and Bootstrap
         * Rock Paper Scissors
-        * One of the responsive pages with Bootstrap
+        * One of the responsive pages with Bootstrap XXXX
         * Writing to Div exercise
         * Maybe local storage?
 ```
